@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Products- Green Station</title>
+    <style>
+      html {
+        overflow-x: hidden;
+      }
+    </style>
+    <style>
+      html{
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- messenger -->
+    <a href="#">
+      <div style="height: 30px ; width: 30px;" class="sticky" data-toggle="modal" data-target="#exampleModal"></div>
+    </a>
+  
+    <!-- Modal -->
+    <div class="modal fade" style="width: 400px; margin-left: 800px; margin-top: 250px;" id="exampleModal" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 20px;">
+          <div class="container-fluid" style="margin-top: 10px;">
+            <div class="row">
+              <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+                <img class="img-fluid" src="images/rsz_1download.jpg" alt="Green Station"
+                  style="height: 40px; width: 40px;">
+              </div>
+              <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12 col-xs-12"></div>
+              <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12 col-xs-12" style="float: right; ">
+                <button class="btn btn-light btn-sm" id="messengerbt"
+                  style="border: none; background: none;  border-radius: 10px;  font-weight: bold;  font-size: 20px; "
+                  onclick="msgfunction()">...</button>
+                <div id="messengerdiv">
+                  <a href="https://facebook.com" id="visit" target="_blank">Visit
+                    Facebook
+                    Page</a><br>
+                    <hr>
+                  <a href="https://messenger.com" id="visit" target="_blank" >Add Messenger To Your Website</a>
+                </div>
+                <button type="button" class="btn btn-light btn-sm" class="close" data-dismiss="modal"
+                  style="width: 40px; border-radius: 10px; border: none; background: none; font-weight: bold;  font-size: 20px;">
+                  <span aria-hidden="true">-</span></button>
+              </div>
+            </div>
+            <h5 style="margin-top: 50px;"> Chat with Green Station</h5>
+            <h6 style="color: grey;">Typically replies within a day</h6>
+            <p style="margin-top: 20px;">Hi! How can we help you?</p>
+            <button type="button" class="btn btn-primary btn-lg"
+              style="width: 350px; border-radius: 10px;"><span><img class="img-fluid" style="height: 30px; width: 30px;"
+                  src="images/messenger.jpg" alt="messenger"> Log Into Messenger</span></button>
+            <br><br>
+            <button type="button" href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-light btn-lg"
+              style="width: 350px; border-radius: 10px;">Continue as Guest</button>
+            <br><br>
+            <p class="text-center" style="color: grey; font-size: small;">By continuing as a guest, you agree to
+              Facebook's <span style="color: #000;"> Terms, Data Policy</span> and <span style="color: #000;"> Cookies
+                Policy.</span> If you choose to log in, Green Station will see the website you came from and info you've
+              made public on your Facebook profile.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- text -->
+    <div class="container">
+      <div class="container">
+          <div class="row" id="text-center">
+            <div class="col-md-12 col-xl-12 col-lg-12 col-sm-12 col-xs-12">
+             <p id="head">Your safety is our highest priority. Our stores are frequently sanitized to ensure all products are safe.</p>
+          </div>    
+        </div>
+      </div>
+
+      <!-- phone -->
+      <div class="row">
+        <div class="col-md-3 col-xl-2 col-lg-2 col-sm-12 col-xs-12">
+          <a id="number" href="tel: 9701 111 633"><i class="fa fa-phone" aria-hidden="true"></i> <span>+91 9701 111 633</span></a>
+        </div>
+        <div class="col-md-4 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+          <a  id="number" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> <span>info@greenstation.co</span></a>
+        </div>
+        <div class="col-md-2 col-xl-2 col-lg-2 col-sm-12 col-xs-12">
+          <a  id="number" href="login.html" style="float: right;"><p><span>Join</span>/ <span>Login</span></p></a>
+        </div>
+        <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+          <a  id="number" style="float: right;" href="#">RS 0.00 <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span> </a>
+        </div>
+      </div>
+
+        <!-- slide toggle -->
+    <div class="box" id="box" style="display: none;">
+      <div class="box-inner">
+        <div class="row">
+         <a href="" id="number" onclick="collapsefn()"><h5> < Continue Shopping</h5> </a>
+       </div>
+      <hr>
+        <div class="row" id="box1">
+          <p id="box2"> Your Order</p>
+        </div>
+        <div class="row" id="box1">
+          <small>You have no items in your cart</small>
+        </div>
+      </div>
+    </div>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" id="navbar1">
+  <img id="tel" src="images/rsz_1download.jpg" class="img-fluid" alt="navbar">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="products.html" id="home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a id="home" class="nav-link" href="aboutus.html">
+          About Us
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="home" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+        <div class="dropdown-content" id="none">
+          <div class="row">
+            <div class="column p-2">
+              <ul id="organic">
+                <li>
+                  <a href="organic_fruits&vegetables.html"><h5 id="terra1">Organic Fruits & Vegetables</h5></a>
+                </li>
+                <li>
+                  <a href="organic_fruits.html"><small id="terra1">Organic Fruits</small></a></li>
+                <li>
+                  <a href="organic_vegetables.html"><small id="terra1">Organic Vegetables</small></a></li>
+                <li> <small id="terra1">Organic Green</small></li>
+                <li><small id="terra1"> Organic Etoxic Fruits & Vegetables</small></li>
+              </ul>
+            </div>
+            <div class="column p-2">
+              <ul id="organic">
+                <li>
+                  <h5 id="terra1">Organic Staples</h5>
+                </li>
+                <li><small id="terra1">Rice & staples</small></li>
+                <li><small id="terra1">Grains & Flours</small></li>
+                <li><small id="terra1"> Spices & Masalas</small></li>
+                <li><small id="terra1">Salt,Sugar & Substitutes</small></li>
+                <li><small id="terra1">Oils & Ghee</small></li>
+                <li><small id="terra1">Dryfruits & Nuts</small> </li>
+              </ul>
+            </div>
+            <div class="column p-2">
+              <ul id="organic">
+                <li>
+                  <h5 id="terra1">Ready to Cook</h5>
+                </li>
+                <li><small id="terra1" >Healthy Breakfast</small></li>
+                <li><small id="terra1" > Beverages</small></li>
+                <li><small id="terra1" >Baby Food</small></li>
+                <li><small id="terra1" ><small>Diary</small></small></li>
+              </ul>
+            </div>
+            <div class="column p-2">
+              <ul id="organic">
+                <li>
+                  <h5 id="terra1">Health & Wellness</h5>
+                </li>
+                <li><small id="terra1">Wellness Products</small></li>
+                <li><small id="terra1">Suppliments</small></li>
+              </ul>
+            </div>
+            <div class="column p-2">
+              <ul id="organic">
+                <li>
+                  <h5 id="terra1">Home & Living</h5>
+                </li>
+                <li><small id="terra1">Home Gradening</small></li>
+              </ul>
+            </div>
+            <div class="column p-2">
+              <ul id="organic">
+                <li>
+                  <h5 id="terra1">Promotions &Offers</h5>
+                </li>
+                <li><small id="terra1">Combo Items</small></li>
+                <li><small id="terra1">Offer Items</small></li>
+                <li><small id="terra1">Seasonal Items</small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="home" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Brands
+        </a>
+        <div class="dropdown-content" id="content">
+          <div class="row">
+            <div class="column p-1">
+              <ul id="organic">
+                <li><small id="terra1">terra green organics</small></li>
+                <li> <small id="terra1">Organic Fruits</small></li>
+                <li><small id="terra1">Organic Vegetables</small></li>
+                <li> <small id="terra1">Organic Green</small></li>
+                <li><small id="terra1"> Organic Etoxic Fruit</small></li>
+              </ul>
+            </div>
+            <div class="column p-1">
+              <ul id="organic">
+                <li> <small id="terra1">Organic Staples</small></li>
+                <li><small id="terra1">Rice & staples</small></li>
+                <li><small id="terra1">Grains & Flours</small></li>
+                <li><small id="terra1"> Spices & Masalas</small></li>
+                <li><small id="terra1">Salt,Sugar</small></li>
+                <li><small id="terra1">Oils & Ghee</small></li>
+                <li><small id="terra1">Dryfruits & Nuts</small> </li>
+              </ul>
+            </div>
+            <div class="column p-1">
+              <ul id="organic">
+                <li> <small id="terra1">Ready to Cook</small></li>
+                <li><small id="terra1">Healthy Breakfast</small></li>
+                <li><small id="terra1"> Beverages</small></li>
+                <li><small id="terra1">Baby Food</small></li>
+                <li><small id="terra1"><small>Diary</small></small></li>
+                <li><small id="terra1"><small>sunstitutes</small></small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a id="home" class="nav-link" href="locateus.html">Locate Us</a>
+      </li>
+    </ul>
+  </div>
+  <div id="search1">
+    <input type="text" placeholder=""><i class="fa fa-search"></i>
+  </div>
+</nav>
+
+<!-- products -->
+<div class="conatiner-fluid">
+    <div class="row" id="bg">
+        <h1 id="product">Products</h1>
+    </div>
+</div>
+
+<!-- brand -->
+<br>
+<div class="container">
+<div class="row">
+<div class="col-md-6 col-xl-4 col-lg-4 col-sm-12 col-xs-12" id="my_Brands1">
+<button class="btn btn-link"  onclick="my_Brands()">v Brands</button>
+<div id="my_Brands">
+  <div id="scroll">
+    <input type="checkbox" /> Biosephia <span id="numbers">[4]</span><br/>
+    <input type="checkbox" /> Bubble Nut Wash<span id="numbers">[1]</span> <br/>
+    <input type="checkbox" /> Cocosutra<span id="numbers">[4]</span> <br/>
+    <input type="checkbox" /> Early Foods<span id="numbers">[18]</span> <br/>
+    <input type="checkbox" /> Farm made<span id="numbers">[1]</span> <br/>
+    <input type="checkbox" /> Flavure<span id="numbers">[3]</span> <br/>
+    <input type="checkbox" /> Garden Farms<span id="numbers">[2]</span> <br/>
+    <input type="checkbox" /> Green Station<span id="numbers">[109]</span> <br/>
+    <input type="checkbox" /> Health Sutra<span id="numbers">[5]</span> <br/>
+    <input type="checkbox" /> Herb tantra<span id="numbers">[14]</span> <br/>
+    <input type="checkbox" /> Home Crop<span id="numbers">[3]</span> <br/>
+    <input type="checkbox" /> Honest Enterprises<span id="numbers">[3]</span> <br/>
+    <input type="checkbox" /> Jivo Wellness<span id="numbers">[2]</span> <br/>
+    <input type="checkbox" /> Lazy Gardener<span id="numbers">[2]</span> <br/>
+    <input type="checkbox" /> Maya Organi<span id="numbers">[22]</span>c<br/>
+    <input type="checkbox" /> Millenova<span id="numbers">[4]</span> <br/>
+    <input type="checkbox" /> Native Araku Coffee<span id="numbers">[1]</span> <br/>
+    <input type="checkbox" /> Nourish Organics<span id="numbers">[26]</span> <br/>
+    <input type="checkbox" /> Nutriorg<span id="numbers">[23]</span> <br/>
+    <input type="checkbox" />  Organics Roots<span id="numbers">[10]</span> <br/>
+    <input type="checkbox" /> Pee Safe<span id="numbers">[1]</span> <br/>
+    <input type="checkbox" /> Phalada Pure & Sure<span id="numbers">[45]</span> <br/>
+    <input type="checkbox" /> Pink HArvest<span id="numbers">[7]</span> <br/>
+    <input type="checkbox" /> Praakrithik<span id="numbers">[21]</span> <br/>
+    <input type="checkbox" /> Raw Pressery<span id="numbers">[8]</span> <br/>
+    <input type="checkbox" /> Resona Organics<span id="numbers">[3]</span> <br/>
+    <input type="checkbox" /> Terra Green Organics<span id="numbers">[63]</span> <br/>
+    <input type="checkbox" /> tHE gOURMET jar<span id="numbers">[12]</span> <br/>
+    <input type="checkbox" /> Timious<span id="numbers">[17]</span> <br/>
+    <input type="checkbox" /> timious<span id="numbers">[1]</span> <br/>
+</div>
+</div>
+<hr>
+<button class="btn btn-link" onclick="my_Products()">v Products</button>
+<div id="my_Products">
+  <div id="scroll">
+    <input type="checkbox" /> Baby & TOddle Snacks <span id="numbers">[4]</span><br/>
+    <input type="checkbox" /> Baby Food<span id="numbers">[1]</span> <br/>
+    <input type="checkbox" /> Beverages<span id="numbers">[4]</span> <br/>
+    <input type="checkbox" /> Breakfast<span id="numbers">[18]</span> <br/>
+    <input type="checkbox" /> Breakfast Cereals<span id="numbers">[1]</span> <br/>
+    <input type="checkbox" /> Chutneys<span id="numbers">[3]</span> <br/>
+    <input type="checkbox" /> Coconut Oil<span id="numbers">[2]</span> <br/>
+    <input type="checkbox" /> Coffee<span id="numbers">[109]</span> <br/>
+    <input type="checkbox" /> Cookies<span id="numbers">[5]</span> <br/>
+    <input type="checkbox" /> Dal<span id="numbers">[14]</span> <br/>
+    <input type="checkbox" /> Dalia<span id="numbers">[3]</span> <br/>
+    <input type="checkbox" /> Dals<span id="numbers">[3]</span> <br/>
+    <input type="checkbox" /> Decor<span id="numbers">[2]</span> <br/>
+    <input type="checkbox" /> Dei Cow Ghee<span id="numbers">[2]</span> <br/>
+    <input type="checkbox" /> Dips & Breads<span id="numbers">[22]</span>c<br/>
+    <input type="checkbox" /> Dry Fruits<span id="numbers">[4]</span> <br/>
+    <input type="checkbox" /> Festive Season <span id="numbers">[1]</span> <br/>
+    <input type="checkbox" /> Flours<span id="numbers">[26]</span> <br/>
+    <input type="checkbox" /> Fruits<span id="numbers">[23]</span> <br/>
+    <input type="checkbox" /> Fruit Baskets<span id="numbers">[10]</span> <br/>
+    <input type="checkbox" /> Garam Masala<span id="numbers">[1]</span> <br/>
+    <input type="checkbox" /> Garlic Powder<span id="numbers">[45]</span> <br/>
+    <input type="checkbox" /> Ghee<span id="numbers">[7]</span> <br/>
+    <input type="checkbox" /> Ginger Powder<span id="numbers">[21]</span> <br/>
+    <input type="checkbox" /> Grains<span id="numbers">[8]</span> <br/>
+    <input type="checkbox" /> ground Nuts<span id="numbers">[3]</span> <br/>
+    <input type="checkbox" /> Health Bars<span id="numbers">[63]</span> <br/>
+    <input type="checkbox" /> Health Drinks<span id="numbers">[12]</span> <br/>
+    <input type="checkbox" /> Health Supplements<span id="numbers">[17]</span> <br/>
+    <input type="checkbox" /> Healthy Snacks<span id="numbers">[1]</span> <br/>
+</div>
+</div>
+<hr>
+<button class="btn btn-link" onclick="my_Quantity()">v  Quantity</button>
+<div id="my_Quantity">
+<div id="scroll">
+  <input type="checkbox" /> 1kg <span id="numbers">[4]</span><br/>
+  <input type="checkbox" /> 450gms<span id="numbers">[1]</span> <br/>
+  <input type="checkbox" /> 250ml<span id="numbers">[4]</span> <br/>
+  <input type="checkbox" /> 350gms<span id="numbers">[18]</span> <br/>
+  <input type="checkbox" /> 450gms<span id="numbers">[1]</span> <br/>
+  <input type="checkbox" /> 10x10<span id="numbers">[3]</span> <br/>
+  <input type="checkbox" /> 12x12<span id="numbers">[2]</span> <br/>
+  <input type="checkbox" /> 16x4<span id="numbers">[109]</span> <br/>
+  <input type="checkbox" /> 3kg<span id="numbers">[5]</span> <br/>
+  <input type="checkbox" /> 4kg<span id="numbers">[14]</span> <br/>
+  <input type="checkbox" /> 6 pecies<span id="numbers">[3]</span> <br/>
+  <input type="checkbox" /> 12 pieces<span id="numbers">[3]</span> <br/>
+  <input type="checkbox" /> 30ml<span id="numbers">[2]</span> <br/>
+  <input type="checkbox" /> 300ml<span id="numbers">[2]</span> <br/>
+  <input type="checkbox" /> 750gm<span id="numbers">[22]</span>c<br/>
+  <input type="checkbox" /> 150gms<span id="numbers">[4]</span> <br/>
+  <input type="checkbox" /> 8kg<span id="numbers">[1]</span> <br/>
+  <input type="checkbox" /> 25-Tea Bags<span id="numbers">[26]</span> <br/>
+  <input type="checkbox" /> 150gms<span id="numbers">[23]</span> <br/>
+  <input type="checkbox" /> 210g<span id="numbers">[10]</span> <br/>
+  <input type="checkbox" /> 80g<span id="numbers">[1]</span> <br/>
+  <input type="checkbox" /> 540ml<span id="numbers">[45]</span> <br/>
+  <input type="checkbox" /> 500gm<span id="numbers">[7]</span> <br/>
+  <input type="checkbox" /> 90 gm<span id="numbers">[21]</span> <br/>
+  <input type="checkbox" /> 130g<span id="numbers">[8]</span> <br/>
+  <input type="checkbox" /> 3kg<span id="numbers">[3]</span> <br/>
+  <input type="checkbox" /> 1kg<span id="numbers">[63]</span> <br/>
+  <input type="checkbox" /> 500ml<span id="numbers">[12]</span> <br/>
+  <input type="checkbox" /> 10kg<span id="numbers">[17]</span> <br/>
+  <input type="checkbox" /> 520ml<span id="numbers">[1]</span> <br/>
+  </div>
+</div>
+<hr>
+ </div>
+ <div class="col-md-6 col-xl-8 col-lg-8 col-sm-12 col-xs-12">
+<hr>
+<div class="row">
+    <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+        <p>435 Products</p>
+    </div>
+    <div class="col-md-1 col-xl-4 col-lg-4 col-sm-12 col-xs-12"></div>
+    <div class="col-md-4 col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+      <select name="Products">
+        <option value="Relevance">Relevance</option>
+        <option value="Title: A-Z">Title: A-Z</option>
+        <option value="Title: Z-A">Title: Z-A</option>
+        <option value="Date: New-Old">Date: New-Old</option>
+        <option value="Date: Old-New">Date: Old-New</option>
+        <option value="Price: Low-High">Price: Low-High</option>
+        <option value="Price:High-Low">Price:High-Low</option>
+        <option value="Discount: Hign-Low">Date: High-Low</option>
+      </select>
+      <i id="grid" class="fa fa-th" aria-hidden="true"></i>
+      <i id="grid" class="fa fa-list-ul" aria-hidden="true"></i>
+    </div>
+</div>
+<hr>
+
+<!-- card -->
+<div class="row">
+  <div class="col-xl-4 col-lg-2 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" class="img-fluid" src="images/spinach.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body" style="margin-top: -30px;">
+        <small id="card-image" style="background-color: #AEB6BF; width: 50px;">Sold Out</small>
+        <p class="card-text">Organic Bachali Leaves / Ceylon Spinach</p>
+        <h6 class="card-text">Rs 23</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" style="height: 350px;width: 500px;" class="img-fluid" src="images/Basmati_Brown_Rice_1kg_600x.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart5" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body" >
+        <small id="card-image" style="background-color: #AEB6BF; width: 50px;margin-top: -30px;">Sold Out</small>
+        <p class="card-text">Terra Greens Organic’s Sonamasuri White Rice</p>
+        <h6 class="card-text">From Rs 110</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" class="img-fluid" src="images/pure.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <p class="card-text">Phalada Pure & Sure's Desiccated Coconut</p>
+        <h6 class="card-text">Rs 152</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" class="img-fluid" style="height: 350px;width: 450px;" src="images/Sonamasuri_White_Rice_1Kg_600x.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart5" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <small id="card-image" style="background-color: #AEB6BF; width: 50px;">Sold Out</small>
+        <p class="card-text">Terra Greens Organic’s Basmati Brown Rice 1 kg</p>
+        <h6 class="card-text">Rs 220</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" class="img-fluid" src="images/Basmati_Brown_Rice_1kg_600x.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <small id="card-image" style="background-color: #AEB6BF; width: 50px;">Sold Out</small>
+        <p class="card-text">Maya Organic's Baubles - Red (Set of 4)</p>
+        <h6 class="card-text">Rs 460</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" class="img-fluid" src="images/pure.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <p class="card-text">Phalada Pure & Sure's Desiccated Coconut</p>
+        <h6 class="card-text">Rs 152</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" style="height: 250px; width: 440px; text-align: center;" class="img-fluid" src="images/Dangler_Kite_600x.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart1" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <small id="card-image" style="background-color: #AEB6BF; width: 50px;">Only 1 Left</small>
+        <p class="card-text">Dangler Kite</p>
+        <h6 class="card-text">Rs 285</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" class="img-fluid" style="height: 250px;width: 440px; text-align: center;" src="images/Dangler_Ring_600x.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart2" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <small id="card-image" style="background-color: #AEB6BF; width: 50px;">Only 1 Left</small>
+        <p class="card-text">Dangler Ring</p>
+        <h6 class="card-text">Rs 235</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" style="height: 380px;" class="img-fluid" style=" text-align: center;" src="images/pure.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart"class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <small id="card-image" style="background-color: #AEB6BF; width: 50px;margin-top: -80px;">Sold Out</small>
+        <p class="card-text">Health Sutras Bajras Flakes</p>
+        <h6 class="card-text">Rs 50</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card" style="height: 500px;">
+      <a href=""><img id="img1" class="img-fluid" src="images/Masala_Chai_Kit_600x.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <small id="card-image" style="background-color: #AEB6BF; width: 50px;">Only 1 Left</small>
+        <p class="card-text">Masala Chai</p>
+        <h6 class="card-text">Rs 285</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card"  style="height: 500px;">
+      <a href=""><img id="img1" class="img-fluid" src="images/gongura_9d6e18fd-dc25-4359-adcb-e4a318041f3f_600x.jpg" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart3" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <small id="card-image" style="background-color: #AEB6BF; width: 50px;">Only 1 Left</small>
+        <p class="card-text">Gongura</p>
+        <h6 class="card-text">Rs 45</h6>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-2">
+    <div class="card"  style="height: 500px;" >
+      <a href=""><img id="img1" class="img-fluid" src="images/Garlic_Pitted_01_600x.png" class="card-img-top" alt="img"></a>
+      <p id="dummy-span"> Quick <br>Shop</p>
+      <div></a>
+        <div id="text1" class="text_wrap text-center">
+        </div>
+        <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+      </div>
+      <div  class="card-body">
+        <p class="card-text">Garlic</p>
+        <h6 class="card-text">Rs 50</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+ </div>
+
+ <!-- footer -->
+ <footer >
+  <div class="row">
+    <div class="col-md-12 col-xl-2 col-lg-2 col-sm-12 col-xs-12">
+      <img class="img-fluid" src="images/rsz_1download.jpg" alt="">
+    </div>
+    <div class="col-md-6 col-xl-2 col-lg-2 col-sm-12 col-xs-12" style="padding-left: 70px;">
+      <p class="size">Home</p>
+      <p class="size">Products</p>
+      <p class="size">Stores</p>
+      <p class="size">Contact</p>
+      <p class="size">Franchise</p>
+      <p class="size">Blog</p>
+      <div class="vl"></div>
+    </div>
+    <div class="col-md-6 col-xl-3 col-lg-3 col-sm-12 col-xs-12" style="padding-left: 70px;">
+      <p class="size">Brands</p>
+      <p class="size">Search Products</p>
+      <p class="size">View All Products</p>
+      <p class="size">Refund Policy</p>
+      <p class="size">Privacy Policy</p>
+      <p class="size">Terms</p>
+      <div id="vl"></div>
+    </div>
+    <div class="col-md-12 col-xl-5 col-lg-5 col-sm-12 col-xs-12" style="padding-right: 150px;">
+      <a href="#"><small id="top">Back to the top ^</small></a>
+      <br>
+      <div class="col-md-12 col-xl-5 col-lg-5 col-sm-12 col-xs-12">
+              <div class="row">
+        <h4 id="hover" id="subscribe">Subscribe</h4>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-md-12 col-xl-12 col-lg-12 col-sm-12 col-xs-12">
+
+          <div class="input-group mb-3">
+            <input id="email" type="text" class="form-control" placeholder="Email address"
+              aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button id="success" class="btn btn-success" type="button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="float: right; margin-right: 3px;">
+        <a href=""><i style="padding-right: 10px;" class="fa fa-facebook-official" aria-hidden="true" id="fb"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true" id="fb"></i></a>
+      </div>
+      <div class="row">
+        <h5 id="available">Also Available on</h5>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <a href="https://www.swiggy.com"><img class="img-fluid" id="swiggy" src="images/swiggy.png" alt=""></a>
+          <a href=""><img class="img-fluid" id="swiggy" src="images/nnn.jpg" alt=""></a>
+          <a href="https://www.zomato.com"><img class="img-fluid" id="swiggy" src="images/zomato.jpg" alt=""></a>
+          <a href="https://www.nmobiwik.com"><img class="img-fluid" id="swiggy" src="images/mobiwik.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class=" col-xl-1 col-lg-1 col-sm-12 col-xs-12"></div>
+    <div class="col-md-12 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+      <small>Copyright © 2020 Green Station<br>Powered by Shopify</small>
+    </div>
+    <div class="col-md-12 col-xl-4 col-lg-4 col-sm-12 col-xs-12"></div>
+    <div class="col-md-12 col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+      <a href=""><img class="img-fluid" id="mastercard" src="images/Mastercard_logo.0.jpg" alt="mastercard"></a>
+      <a href=""><img class="img-fluid" id="mastercard" src="images/visa.jpg" alt="visacard"></a>
+    </div>
+  </div>
+  <br>
+</footer>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  
+  <!-- brands -->
+  <script>
+  function my_Brands() {
+    var x = document.getElementById("my_Brands");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+  <script>
+    function my_Products() {
+      var x = document.getElementById("my_Products");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    <script>
+      function my_Quantity() {
+        var x = document.getElementById("my_Quantity");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+       <script>
+        function msgfunction() {
+          var x = document.getElementById('messengerdiv');
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+      </script>
+      
+      <!-- slide toggle -->
+  <script>
+    $(document).ready(function () {
+      $(".slide-toggle").click(function () {
+        $(".box").animate({
+          width: "toggle"
+        });
+      });
+    });
+  </script>
+      <script>
+        function collapsefn(){
+          document.getElementById('box').style.display= "none"
+        }
+      </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+</body>
+</html>

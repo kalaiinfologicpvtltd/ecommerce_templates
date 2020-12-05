@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style18.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Blog| Stay Healthy With Organic Food Trends, Updates & News-...</title>
+    <style>
+      html {
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+
+     <!-- messenger -->
+  <a href="#">
+    <div style="height: 30px ; width: 30px;" class="sticky" data-toggle="modal" data-target="#exampleModal"></div>
+  </a>
+
+  <!-- Modal -->
+  <div class="modal fade" style="width: 400px; margin-left: 800px; margin-top: 250px;" id="exampleModal" tabindex="-1"
+    aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="border-radius: 20px;">
+        <div class="container-fluid" style="margin-top: 10px;">
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-xl-4 col-xs-12 col-sm-12">
+              <img class="img-fluid" src="images/rsz_1download.jpg" alt="Green Station"
+                style="height: 40px; width: 40px;">
+            </div>
+            <div class="col-md-4 col-lg-4 col-xl-4 col-xs-12 col-sm-12"></div>
+            <div class="col-md-4 col-lg-4 col-xl-4 col-xs-12 col-sm-12" style="float: right; ">
+              <button class="btn btn-light btn-sm" id="messengerbt"
+                style="border: none; background: none;  border-radius: 10px;  font-weight: bold;  font-size: 20px; "
+                onclick="msgfunction()">...</button>
+              <div id="messengerdiv">
+                <a href="https://facebook.com" id="visit" target="_blank">Visit
+                  Facebook
+                  Page</a><br>
+                  <hr>
+                <a href="https://messenger.com" id="visit" target="_blank" >Add Messenger To Your Website</a>
+              </div>
+              <button type="button" class="btn btn-light btn-sm" class="close" data-dismiss="modal"
+                style="width: 40px; border-radius: 10px; border: none; background: none; font-weight: bold;  font-size: 20px;">
+                <span aria-hidden="true">-</span></button>
+            </div>
+          </div>
+          <h5 style="margin-top: 50px;"> Chat with Green Station</h5>
+          <h6 style="color: grey;">Typically replies within a day</h6>
+          <p style="margin-top: 20px;">Hi! How can we help you?</p>
+          <button type="button" class="btn btn-primary btn-lg"
+            style="width: 350px; border-radius: 10px;"><span><img class="img-fluid" style="height: 30px; width: 30px;"
+                src="images/messenger.jpg" alt="messenger"> Log Into Messenger</span></button>
+          <br><br>
+          <button type="button" href="#" data-toggle="modal" data-target="#exampleModal" class="btn btn-light btn-lg"
+            style="width: 350px; border-radius: 10px;">Continue as Guest</button>
+          <br><br>
+          <p class="text-center" style="color: grey; font-size: small;">By continuing as a guest, you agree to
+            Facebook's <span style="color: #000;"> Terms, Data Policy</span> and <span style="color: #000;"> Cookies
+              Policy.</span> If you choose to log in, Green Station will see the website you came from and info you've
+            made public on your Facebook profile.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- text -->
+        <div class="container">
+            <div class="row" id="text-center">
+              <div class="col-md-12 col-xl-12 col-lg-12 col-sm-12 col-xs-12">
+               <p id="head">Your safety is our highest priority. Our stores are frequently sanitized to ensure all products are safe.</p>
+            </div>    
+          </div>
+        </div>
+
+         <!-- phone -->
+         <div class="row">
+          <div class="col-md-4 col-xl-2 col-lg-2 col-sm-12 col-xs-12">
+            <a id="number" href="tel: 9701 111 633"><i class="fa fa-phone" aria-hidden="true"></i> <span>+91 9701 111 633</span></a>
+          </div>
+          <div class="col-md-4 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+            <a  id="number" href="#"><i class="fa fa-envelope" aria-hidden="true"></i> <span>info@greenstation.co</span></a>
+          </div>
+          <div class="col-md-2 col-xl-2 col-lg-2 col-sm-12 col-xs-12">
+            <a  id="number" href="login.html" style="float: right;"><p><span>Join</span>/ <span>Login</span></p></a>
+          </div>
+          <div class="col-md-2 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+            <a  id="number" style="float: right;" href="#">RS 0.00 <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span> </a>
+          </div>
+        </div>
+
+          <!-- slide toggle -->
+    <div class="box" id="box" style="display: none;">
+      <div class="box-inner">
+        <div class="row">
+         <a href="" id="number" onclick="collapsefn()"><h5> < Continue Shopping</h5> </a>
+       </div>
+      <hr>
+        <div class="row" id="box1">
+          <p id="box2"> Your Order</p>
+        </div>
+        <div class="row" id="box1">
+          <small>You have no items in your cart</small>
+        </div>
+      </div>
+    </div>
+
+           <!-- navbar -->
+           <nav class="navbar navbar-expand-lg navbar-light" id="navbar1">
+            <img id="tel" src="images/rsz_1download.jpg" class="img-fluid" alt="navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="products.html" id="home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a id="home" class="nav-link" href="aboutus.html">
+                    About Us
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a id="home" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-content" id="none">
+                    <div class="row">
+                      <div class="column p-2">
+                        <ul id="organic">
+                          <li>
+                            <a href="organic_fruits&vegetables.html"><h5 id="terra1">Organic Fruits & Vegetables</h5></a>
+                          </li>
+                          <li>
+                            <a href="organic_fruits.html"><small id="terra1">Organic Fruits</small></a></li>
+                          <li>
+                            <a href="organic_vegetables.html"><small id="terra1">Organic Vegetables</small></a></li>
+                          <li> <small id="terra1">Organic Green</small></li>
+                          <li><small id="terra1"> Organic Etoxic Fruits & Vegetables</small></li>
+                        </ul>
+                      </div>
+                      <div class="column p-2">
+                        <ul id="organic">
+                          <li>
+                            <h5 id="terra1">Organic Staples</h5>
+                          </li>
+                          <li><small id="terra1">Rice & staples</small></li>
+                          <li><small id="terra1">Grains & Flours</small></li>
+                          <li><small id="terra1"> Spices & Masalas</small></li>
+                          <li><small id="terra1">Salt,Sugar & Substitutes</small></li>
+                          <li><small id="terra1">Oils & Ghee</small></li>
+                          <li><small id="terra1">Dryfruits & Nuts</small> </li>
+                        </ul>
+                      </div>
+                      <div class="column p-2">
+                        <ul id="organic">
+                          <li>
+                            <h5 id="terra1">Ready to Cook</h5>
+                          </li>
+                          <li><small id="terra1" >Healthy Breakfast</small></li>
+                          <li><small id="terra1" > Beverages</small></li>
+                          <li><small id="terra1" >Baby Food</small></li>
+                          <li><small id="terra1" ><small>Diary</small></small></li>
+                        </ul>
+                      </div>
+                      <div class="column p-2">
+                        <ul id="organic">
+                          <li>
+                            <h5 id="terra1">Health & Wellness</h5>
+                          </li>
+                          <li><small id="terra1">Wellness Products</small></li>
+                          <li><small id="terra1">Suppliments</small></li>
+                        </ul>
+                      </div>
+                      <div class="column p-2">
+                        <ul id="organic">
+                          <li>
+                            <h5 id="terra1">Home & Living</h5>
+                          </li>
+                          <li><small id="terra1">Home Gradening</small></li>
+                        </ul>
+                      </div>
+                      <div class="column p-2">
+                        <ul id="organic">
+                          <li>
+                            <h5 id="terra1">Promotions &Offers</h5>
+                          </li>
+                          <li><small id="terra1">Combo Items</small></li>
+                          <li><small id="terra1">Offer Items</small></li>
+                          <li><small id="terra1">Seasonal Items</small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a id="home" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Brands
+                  </a>
+                  <div class="dropdown-content" id="content">
+                    <div class="row">
+                      <div class="column p-1">
+                        <ul id="organic">
+                          <li><small id="terra1">terra green organics</small></li>
+                          <li> <small id="terra1">Organic Fruits</small></li>
+                          <li><small id="terra1">Organic Vegetables</small></li>
+                          <li> <small id="terra1">Organic Green</small></li>
+                          <li><small id="terra1"> Organic Etoxic Fruit</small></li>
+                        </ul>
+                      </div>
+                      <div class="column p-1">
+                        <ul id="organic">
+                          <li> <small id="terra1">Organic Staples</small></li>
+                          <li><small id="terra1">Rice & staples</small></li>
+                          <li><small id="terra1">Grains & Flours</small></li>
+                          <li><small id="terra1"> Spices & Masalas</small></li>
+                          <li><small id="terra1">Salt,Sugar</small></li>
+                          <li><small id="terra1">Oils & Ghee</small></li>
+                          <li><small id="terra1">Dryfruits & Nuts</small> </li>
+                        </ul>
+                      </div>
+                      <div class="column p-1">
+                        <ul id="organic">
+                          <li> <small id="terra1">Ready to Cook</small></li>
+                          <li><small id="terra1">Healthy Breakfast</small></li>
+                          <li><small id="terra1"> Beverages</small></li>
+                          <li><small id="terra1">Baby Food</small></li>
+                          <li><small id="terra1"><small>Diary</small></small></li>
+                          <li><small id="terra1"><small>sunstitutes</small></small></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+      
+                <li class="nav-item">
+                  <a id="home" class="nav-link" href="locateus.html">Locate Us</a>
+                </li>
+              </ul>
+            </div>
+            <div id="search1">
+              <input type="text" placeholder=""><i class="fa fa-search"></i>
+            </div>
+          </nav>
+<!-- text -->
+
+<div class="container">
+  <div class="row">
+   <p id="home1" href="">Home</p>
+   <p id="station" href="">/ Green Station|Blog</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row" id="fa">
+    <p>Share</p>&nbsp;
+    <i href="https://wwww.facebook.com" id="true" class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;
+    <i href="https://www.twitter.com" id="true" class="fa fa-twitter" aria-hidden="true"></i>
+  </div>
+</div>
+
+<!-- green -->
+<div class="container">
+  <div class="row">
+    <h1>Green Station | Blog</h1>&nbsp;
+    <i id="true1"  class="fa fa-wifi" aria-hidden="true"></i>
+  </div>
+</div>
+
+<!-- image -->
+<div class="container">
+  <div class="row">
+       <a href="blog.html"> <img style="width: 1150px; margin-top: 10px;" class="img-fluid" src="images/blog1.jpg"  alt=""></a> 
+  </div>
+</div>
+<br>
+
+<!-- choose -->
+<div class="container">
+<div class="row" id="row1">
+<h1 id="hover">Choose Better</h1>
+<br><br><br>
+<small>New Year is just around the corner and people are going to set their resolutions, yet again. On top of that list is most likely going to be health and everything around it. People will seem motivated and will expect this year to be different...</small>
+</div>
+</div>
+
+<!-- posted -->
+<div class="row" id="row2">
+  <div class="col-md-1 col-xl-1 col-lg-1 col-xs-12 col-sm-12" >
+      <img class="img-fluid" src="images/gravatar_def.png" alt="">
+  </div>
+  <div class="col">
+      <p> 
+          Posted on January 06, 2020
+          <br>
+          Green Station</p>
+  </div>
+  </div>
+
+  <!-- readmore -->
+<div class="row" id="row">
+  <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12 ">
+      <a href="blog.html" id="older">ReadMore</a>
+  </div>
+</div>
+<br><br>
+
+  <!-- image -->
+  <div class="container">
+    <div class="row">
+         <a href="jaggery.html"><img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/blog2.jpg" alt=""></a> 
+    </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+ <div class="row" id="row1">
+  <h3 id="hover">Organic Jaggery Powder Benefits and Uses</h3><br><br>
+  <small>Jaggery is not just a natural sweetener for Indians. These orange blocks of sweetness have been smallart of our culture since ages. You will find Jaggery in every kitchen waiting to be taken out to be used in traditional sweets...
+    </small>
+ </div>
+</div>
+
+<!-- posted -->
+<div class="row" id="row2">
+  <div class="col-md-1 col-xl-1 col-lg-1 col-xs-12 col-sm-12" >
+      <img class="img-fluid" src="images/gravatar_def.png" alt="">
+  </div>
+  <div class="col">
+      <p> 
+          Posted on January 06, 2020
+          <br>
+          Green Station</p>
+  </div>
+  </div>
+
+  <!-- readmore -->
+<div class="row" id="row">
+  <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+      <a href="jaggery.html" id="older">ReadMore</a>
+  </div>
+</div>
+<br><br>
+
+ <!-- image -->
+ <div class="container">
+  <div class="row">
+<a href="quick.html"><img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/blog3.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+ <div class="row" id="row1">
+  <h1 id="hover">Quick & Delicious Winter Veggie Soup</h1>
+  <br><br><br>
+  <p>As the winter months set in, it’s common to crave for comfort food and find yourself indulging in some not-so-healthy but oh-so-delicious meals. From mugs of piping hot chocolate to a spicy bowl of ramen, winter food is definitely enjoyable.</p>
+ </div>
+</div>
+
+ <!-- posted -->
+<div class="row" id="row2">
+  <div class="col-md-1 col-xl-1 col-lg-1 col-xs-12 col-sm-12" >
+      <img class="img-fluid" src="images/gravatar_def.png" alt="">
+  </div>
+  <div class="col">
+      <p> 
+          Posted on December 02, 2019
+          <br>
+          Green Station</p>
+  </div>
+  </div>
+
+  <!-- readmore -->
+<div class="row" id="row">
+  <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+      <a href="quick.html" id="older">ReadMore</a>
+  </div>
+</div>
+<br><br>
+
+<!-- image -->
+<div class="container">
+  <div class="row">
+        <a href=""><img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/nature.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+  <div class="row" id="row1">
+   <h1 id="hover">All About Veganism</h1>
+   <br><br><br><br>
+   <small>Veganism has come a long way from being a fad followed by celebrities to a comprehensive lifestyle choice preferred by millions of people globally. At the core of it, veganism continues to be a choice people take to reduce
+     </small>
+  </div>
+ </div>
+
+ <!-- posted -->
+ <div class="row" id="row2">
+   <div class="col-md-1 col-xl-1 col-lg-1 col-xs-12 col-sm-12" >
+       <img class="img-fluid" src="images/gravatar_def.png" alt="">
+   </div>
+   <div class="col">
+       <p> 
+           Posted on November 25, 2019
+           <br>
+           Green Station</p>
+   </div>
+   </div>
+ 
+   <!-- readmore -->
+ <div class="row" id="row">
+   <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+       <a href="" id="older">ReadMore</a>
+   </div>
+ </div>
+ <br><br>
+
+ <!-- image -->
+<div class="container">
+  <div class="row">
+        <a href=""><img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/1920X625_04_1080x.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+  <div class="row" id="row1">
+   <h4 id="hover">What are Organic grocery shopping and the advantages of organic grocery shopping?</h4>
+   <br><br>
+   <small>Organic food has become a trending topic recently. Whenever we visit any supermarket and browser shopping websites to buy our daily groceries, we come across a section where only organic products are sold.Even on various...
+     </small>
+  </div>
+ </div>
+
+ <!-- posted -->
+ <div class="row" id="row2">
+   <div class="col-md-1 col-xl-1 col-lg-1 col-xs-12 col-sm-12" >
+       <img class="img-fluid" src="images/gravatar_def.png" alt="">
+   </div>
+   <div class="col">
+       <p> 
+           Posted on October 28, 2019
+           <br>
+           Green Station</p>
+   </div>
+   </div>
+ 
+   <!-- readmore -->
+ <div class="row" id="row">
+   <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+       <a href="" id="older">ReadMore</a>
+   </div>
+ </div>
+ <br><br>
+
+ <!-- image -->
+<div class="container">
+  <div class="row">
+        <a href=""><img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/Popular_Organic_Grocery_Stores_5df959b6-7a26-4bc2-bbb2-b15139375659_1080x.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+  <div class="row" id="row1">
+   <h4 id="hover">Reasons why natural products are better than plastic products for kids</h4>
+   <br><br>
+   <small>Invented in the year 1907 under the name of Bakelite, the demand for plastic products have risen exponentially. Plastics are petrochemical products which are easy to shape.Other reasons for which it became famous is that
+
+     </small>
+  </div>
+ </div>
+
+ <!-- posted -->
+ <div class="row" id="row2">
+   <div class="col-md-1 col-xl-1 col-lg-1 col-xs-12 col-sm-12" >
+       <img class="img-fluid" src="images/gravatar_def.png" alt="">
+   </div>
+   <div class="col">
+       <p> 
+           Posted on October 25, 2019
+           <br>
+           Green Station</p>
+   </div>
+   </div>
+ 
+   <!-- readmore -->
+ <div class="row" id="row">
+   <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+       <a href="" id="older">ReadMore</a>
+   </div>
+ </div>
+ <br><br>
+
+  <!-- image -->
+<div class="container">
+  <div class="row">
+        <a href=""><img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/1920X625_05_1080x.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+  <div class="row" id="row1">
+   <h4 id="hover">Tips for successful organic grocery shopping</h4>
+   <br><br>
+   <small>With the rapid spread of health awareness, people have become conscious of their consumption. Due to the demand for extensive production to supply the alarming rise in population, use of excessive chemicals to increase the
+     </small>
+  </div>
+ </div>
+
+ <!-- posted -->
+ <div class="row" id="row2">
+   <div class="col-md-1 col-xl-1 col-lg-1 col-xs-12 col-sm-12" >
+       <img class="img-fluid" src="images/gravatar_def.png" alt="">
+   </div>
+   <div class="col">
+       <p> 
+           Posted on October 25, 2019
+           <br>
+           Green Station</p>
+   </div>
+   </div>
+ 
+   <!-- readmore -->
+ <div class="row" id="row">
+   <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+       <a href="" id="older">ReadMore</a>
+   </div>
+ </div>
+ <br><br>
+
+  <!-- image -->
+<div class="container">
+  <div class="row">
+        <a href=""><img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/1920X625_01_1080x.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+  <div class="row" id="row1">
+   <h4 id="hover">Popular Organic Grocery Stores and Their Business Models</h4>
+   <br><br>
+   <small>In today’s world, every food item is processed with some form of chemical that is harmful to us. To avoid the harm caused to everyone including humans, insects, and to maintain the ecological balance, organic farming is...
+     </small>
+  </div>
+ </div>
+
+ <!-- posted -->
+ <div class="row" id="row2">
+   <div class="col-md-1 col-xl-1 col-lg-1 colsm-12 col-xs-12" >
+       <img class="img-fluid" src="images/gravatar_def.png" alt="">
+   </div>
+   <div class="col">
+       <p> 
+           Posted on October 25, 2019
+           <br>
+           Green Station</p>
+   </div>
+   </div>
+ 
+   <!-- readmore -->
+ <div class="row" id="row">
+   <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+       <a href="" id="older">ReadMore</a>
+   </div>
+ </div>
+ <br><br>
+
+ <!-- image -->
+<div class="container">
+  <div class="row">
+        <a href=""><img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/blog-arp-2_1080x.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+  <div class="row" id="row1">
+   <h4 id="hover">Summer Cool Offs - Why and How to Grow Wheatgrass at Home</h4>
+   <br><br>
+   <small>It is a common fact that eating right is essential to stay healthy during summers. There are many vegetables and fruits we all know like watermelons, cucumbers, oranges, pineapples and we've all heard of their benefits as well. 
+     </small>
+  </div>
+ </div>
+
+ <!-- posted -->
+ <div class="row" id="row2">
+   <div class="col-md-1 col-xl-1 col-lg-1 col-xs-12 col-sm-12" >
+       <img class="img-fluid" src="images/gravatar_def.png" alt="">
+   </div>
+   <div class="col">
+       <p> 
+           Posted on October 25, 2019
+           <br>
+           Green Station</p>
+   </div>
+   </div>
+ 
+   <!-- readmore -->
+ <div class="row" id="row">
+   <div class="col-md-3 col-lg-3 col-xl-3 col-sm-12 col-xs-12">
+       <a href="" id="older">ReadMore</a>
+   </div>
+ </div>
+ <br><br>
+
+ <!-- image -->
+<div class="container">
+  <div class="row">
+        <a href=""><img style="width: 1150px; margin-top: 10px;" class="img-fluid"src="images/blog-arp-1_1_1080x.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+  <div class="row" id="row1">
+   <h4 id="hover">Eating Organic: It’s Child’s Play
+  </h4>
+   <br><br>
+   <small>Even Popeye ate spinach when he absolutely had to! It is hard to fight with arguments that a kid puts on the same table where a boring plate-full of leafy greens sits untouched.
+     </small>
+  </div>
+ </div>
+
+ <!-- posted -->
+ <div class="row" id="row2">
+   <div class="col-md-1 colxl-1 col-lg-1 col-xs-12 col-sm-12" >
+       <img class="img-fluid" src="images/gravatar_def.png" alt="">
+   </div>
+   <div class="col">
+       <p> 
+           Posted on October 25, 2019
+           <br>
+           Green Station</p>
+   </div>
+   </div>
+ 
+   <!-- readmore -->
+ <div class="row" id="row">
+   <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+       <a href="" id="older">ReadMore</a>
+   </div>
+ </div>
+ <br><br>
+
+ <!-- image -->
+<div class="container">
+  <div class="row">
+        <a href=""><img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/mar-5_1_1080x.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+  <div class="row" id="row1">
+   <h4 id="hover">Eat Light and Breeze through the Summer
+  </h4>
+   <br><br>
+   <small>Summer is the season of long cold showers, watermelon juices, pulpy mangoes, lying down under the shade of the tree, and ice cream! If you hate brittle cold winters, then summer brings respite to the ones who are always under the blanket.
+     </small>
+  </div>
+ </div>
+
+ <!-- posted -->
+ <div class="row" id="row2">
+   <div class="col-md-1 col-xl-1 col-lg-1 col-sm-12 col-xs-12" >
+     <a href="">  <img class="img-fluid" src="images/gravatar_def.png" alt=""></a>
+   </div>
+   <div class="col">
+       <p> 
+           Posted on October 25, 2019
+           <br>
+           Green Station</p>
+   </div>
+   </div>
+ 
+   <!-- readmore -->
+ <div class="row" id="row">
+   <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+       <a href="" id="older">ReadMore</a>
+   </div>
+ </div>
+ <br><br>
+
+  <!-- image -->
+<div class="container">
+  <div class="row">
+       <a href=""> <img style="width: 1150px; margin-top: 10px;"class="img-fluid" src="images/mar-6_1_1080x.jpg" alt=""></a>
+  </div>
+</div>
+<br>
+
+ <!-- choose -->
+ <div class="container">
+  <div class="row" id="row1">
+   <h4 id="hover">Protecting the Insect Kingdom: The Role of Organic Food
+
+  </h4>
+   <br><br>
+   <small>Organic food is produced with the standards of natural farming that practices the use of resources which promote ecological balance and conserve biodiversity. 
+     </small>
+  </div>
+ </div>
+
+ <!-- posted -->
+ <div class="row" id="row2">
+   <div class="col-md-1 col-xl-1 col-lg-1 col-sm-12 col-xs-12" >
+       <img class="img-fluid" src="images/gravatar_def.png" alt="">
+   </div>
+   <div class="col">
+       <p> 
+           Posted on October 25, 2019
+           <br>
+           Green Station</p>
+   </div>
+   </div>
+ 
+   <!-- readmore -->
+ <div class="row" id="row">
+   <div class="col-md-3 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+       <a href="" id="older">ReadMore</a>
+   </div>
+ </div>
+ <br><br>
+
+<!-- results -->
+<div class="container">
+  <div class="row">
+    <small style="margin-left: 30px;">39 results</small>
+  </div>
+</div>
+
+<!-- pagination -->
+<div class="container">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-end">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1" aria-disabled="true"> < </a>
+      </li>
+      <li class="page-item"><a class="page-link" id="page" >1</a></li>
+      <li  class="page-item"><a class="page-link" id="page"  href="stayhealthy1.html">2</a></li>
+      <li class="page-item"><a class="page-link" id="page" href="stayhealthy2.html">3</a></li>
+      <li class="page-item"><a class="page-link" id="page" href="stayhealthy3.html">4</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#"> > </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+  <!-- footer -->
+  <footer>
+    <div class="row">
+      <div class="col-md-12 col-xl-2 col-lg-2 col-sm-12 col-xs-12">
+        <img class="img-fluid" src="images/rsz_1download.jpg" alt="">
+      </div>
+      <div class="col-md-6 col-xl-2 col-lg-2 col-sm-12 col-xs-12" style="padding-left: 70px;">
+        <p class="size">Home</p>
+        <p class="size">Products</p>
+        <p class="size">Stores</p>
+        <p class="size">Contact</p>
+        <p class="size">Franchise</p>
+        <p class="size">Blog</p>
+        <div class="vl"></div>
+      </div>
+      <div class="col-md-6 col-xl-3 col-lg-3 col-sm-12 col-xs-12" style="padding-left: 70px;">
+        <p class="size">Brands</p>
+        <p class="size">Search Products</p>
+        <p class="size">View All Products</p>
+        <p class="size">Refund Policy</p>
+        <p class="size">Privacy Policy</p>
+        <p class="size">Terms</p>
+        <div id="vl"></div>
+      </div>
+      <div class="col-md-12 col-xl-5 col-lg-5 col-sm-12 col-xs-12" style="padding-right: 30px;">
+        <a href="#"><small id="top">Back to the top ^</small></a>
+        <br>
+        <div class="col-md-12 col-xl-5 col-lg-5 col-sm-12 col-xs-12">
+                <div class="row">
+          <h4 id="hover" id="subscribe">Subscribe</h4>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-12 col-xl-12 col-lg-12 col-sm-12 col-xs-12">
+  
+            <div class="input-group mb-3">
+              <input id="email" type="text" class="form-control" placeholder="Email address"
+                aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button id="success" class="btn btn-success" type="button">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="float: right; margin-right: 3px;">
+          <a href=""><i style="padding-right: 10px;" class="fa fa-facebook-official" aria-hidden="true" id="fb"></i></a>
+          <a href=""><i class="fa fa-instagram" aria-hidden="true" id="fb"></i></a>
+        </div>
+        <div class="row">
+          <h5 id="available">Also Available on</h5>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <a href="https://www.swiggy.com"><img class="img-fluid" id="swiggy" src="images/swiggy.png" alt=""></a>
+            <a href=""><img class="img-fluid" id="swiggy" src="images/nnn.jpg" alt=""></a>
+            <a href="https://www.zomato.com"><img class="img-fluid" id="swiggy" src="images/zomato.jpg" alt=""></a>
+            <a href="https://www.nmobiwik.com"><img class="img-fluid" id="swiggy" src="images/mobiwik.jpg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-xl-1 col-lg-1 col-sm-12 col-xs-12"></div>
+      <div class="col-md-12 col-xl-3 col-lg-3 col-sm-12 col-xs-12">
+        <small>Copyright © 2020 Green Station<br>Powered by Shopify</small>
+      </div>
+      <div class="col-md-12 col-xl-4 col-lg-4 col-sm-12 col-xs-12"></div>
+      <div class="col-md-12 col-xl-4 col-lg-4 col-sm-12 col-xs-12">
+        <a href=""><img class="img-fluid" id="mastercard" src="images/Mastercard_logo.0.jpg" alt="mastercard"></a>
+        <a href=""><img class="img-fluid" id="mastercard" src="images/visa.jpg" alt="visacard"></a>
+      </div>
+    </div>
+    <br>
+  </footer>
+</div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+  integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<!-- modal -->
+<script>
+  function msgfunction() {
+    var x = document.getElementById('messengerdiv');
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+
+<!-- slide toggle -->
+<script>
+  $(document).ready(function () {
+    $(".slide-toggle").click(function () {
+      $(".box").animate({
+        width: "toggle"
+      });
+    });
+  });
+</script>
+    <script>
+      function collapsefn(){
+        document.getElementById('box').style.display= "none"
+      }
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+  integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
